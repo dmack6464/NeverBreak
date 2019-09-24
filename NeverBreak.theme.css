@@ -1,0 +1,163 @@
+//META{"name":"NeverBreak","description":"A discount version of RealDark that should be immune to Discord updates. I was inspired to make this theme because of a theme over a year older than this one still mostly works! (DarknessMOD 0.9.1.2) - Support server: https://discord.gg/4GJvzEp or the Website link | THIS THEME IS NOT ON THE OFFICIAL REPO, GO TO THE GITHUB PAGE FOR UPDATES: https://github.com/dmack6464/RealDark","author":"D Mack","version":"1.0","website":"https://discord.gg/4GJvzEp/","source":"https://github.com/dmack6464/NeverBreak/"}*//{}
+
+.theme-dark {
+	--background-modifier-hover:var(--shade0);
+	--background-modifier-selected:var(--shade0);
+	--text-link:var(--links);
+	--channels-default:var(--text);
+	--deprecated-panel-background:var(--shade0);
+	--interactive-normal:var(--text);
+	--background-floating:var(--popup);
+	/*23/09/2019 quickfix*/
+	--background-primary: var(--main);
+	--background-secondary: var(--shade3);
+	--background-tertiary: var(--shade2); /* idk what effect this will have at all tbh */
+}
+
+:root {
+
+    --links:#00ffff;
+	--text:#DDDDDD;
+	--shade0:#252529;
+	--shade1:#1d1d22;
+	--shade2:#0f0f14;
+	--shade3:#09090D;
+	--borders:#202024;
+	--accentcolor:#3070ff;
+	--popup:rgba(15,15,20,0.85);
+}
+
+* {
+	border-color: var(--borders)!important;
+	border-radius: 0px!important;
+	text-transform: unset!important;
+}
+
+.da-scroller,
+#bd-settingspane-container,
+.da-searchResultMessage,
+form,
+.da-content {
+	background-color: #000!important;
+	background:#000!important;
+}
+
+.da-channelTextArea .da-inner,
+.da-channelTextArea .da-inner .da-flex,
+.da-channels,
+.da-title,
+.da-header,
+.da-title .da-children,
+.da-title .da-topic,
+.da-icon,
+.da-toolbar,
+.da-vertical,
+.da-uploadModal {
+	background-color: var(--shade1)!important;
+}
+
+.da-selected,
+.da-selected div,
+.da-titleBar,
+.da-searchBar div,
+.da-textArea,
+.da-footer,
+div[style*="background-color: rgb(114, 137, 218)"] {
+	background-color: var(--shade0)!important;
+}
+
+foreignObject[mask] {
+    mask: none;
+}
+
+.da-header[role="button"],
+.da-h5,
+.da-name,
+.da-membersGroup {
+	font-size: 14px!important;
+	color: var(--text);
+}
+
+button[type="submit"],
+div[style*="background-color: rgb(67, 181, 129);"] {
+	background-color: var(--accentcolor)!important;
+}
+
+
+/* idk why, but discord set this to auto and i cant figure out why, so heres a workaround */
+.member-3W1lQa {
+	height: 42px;
+}
+
+
+.da-sidebarRegion,
+.da-sidebar,
+.da-contentColumnDefault,
+.content-column.default {
+	flex: unset;
+	padding-left: unset;
+	max-width: unset;
+}
+
+.da-contentColumnDefault {
+	width: 100%;
+}
+
+.da-spacer {
+	background-color: #000!important;
+}
+
+.da-switch:after {
+	border-radius: 0px;
+	height: 100%;
+	margin: 0;
+}
+
+
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
+.theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
+.theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
+.theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
+.theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+/*Scrollbars*/
+::-webkit-scrollbar-corner {background-color: transparent;}
+::-webkit-scrollbar {width: 6px !important;height: 8px !important;}
+::-webkit-scrollbar-track:active{background-color: #2a2a2a !important;}
+*:not(:hover)::-webkit-scrollbar-thumb { background: transparent !important; border: 0px solid transparent !important; }
+::-webkit-scrollbar-button {display: none !important;}
+::-webkit-scrollbar-track {background-color: transparent; border:6px;}
+::-webkit-scrollbar-track:hover {background-color: #111111; border:6px;}
+::-webkit-scrollbar-track:active {background-color: #111111; border:6px !important;}
+::-webkit-scrollbar-thumb {background:  #222222 !important;border: transparent !important;}
+
+/* Changes all scroll bars */
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 8px !important;
+}
+/* Border and colour of the scrollbar thumb  */
+::-webkit-scrollbar-thumb {
+    overflow: auto !important ;
+    border-radius: 0px !important ;  /* 0px for box style */
+    background-color: #303030 !important;
+    border-color: transparent !important;
+}
+/* Changes the background colour of the scroll bars and servers. */
+::-webkit-scrollbar-track-piece, .guilds-wrapper {
+    background-color: transparent !important;
+    border: none !important;
+}
+/* This will change the colour when you hover over any scroll bar. */ 
+::-webkit-scrollbar-thumb:hover {
+    background: #505050 !important; 
+    border-color:transparent !important;
+}
+/* This will change the colour when you click and drag any scroll bar */
+::-webkit-scrollbar-thumb:active {
+    background: #707070 !important;
+    border-color: transparent !important;
+}
